@@ -1,0 +1,73 @@
+.cart-component {
+    display: flex;
+    
+    align-items: center;
+  }
+  
+  .card {
+    width: 50%;
+    border: 0px solid rgb(154, 152, 152);
+    margin: 20px;
+    box-shadow: 7px 10px 7px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: rgb(195, 190, 190);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  .button {
+    background-color: #13304f;
+    color: rgb(102, 100, 100);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #2e2e2f;
+  }
+  
+  img {
+    height: 200px;
+    width: 200px;
+    margin-right: 5px;
+  }
+  .alert {
+    font-weight: bold;
+  }
+  
+  .validation {
+    display: inline-block;
+    background-image: url('../commandecarte/tick.png'); /* Remplacez par le chemin de votre icône de validation */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+  }
+  
+  .annulation {
+    display: inline-block;
+    background-image: url('../commandecarte/cross.png'); /* Remplacez par le chemin de votre icône d'annulation */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+  }

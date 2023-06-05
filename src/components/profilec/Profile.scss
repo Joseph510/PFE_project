@@ -1,0 +1,155 @@
+.profile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 600px;
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #333;
+      text-shadow: 0 2px 4px #fff;
+    }
+    
+    &__header {
+      display: flex;
+      margin-bottom: 20px;
+      
+      & > * {
+        flex: 1;
+      }
+      
+      &__avatar {
+        margin-right: 20px;
+        
+        img {
+          border-radius: 50%;
+          height: 100px;
+          width: 100px;
+        }
+      }
+      
+      &__details {
+        display: flex;
+        flex-direction: column;
+        
+        &-value {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 10px;
+          position: relative;
+          
+          &:after {
+            content: '';
+            display: block;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+          }
+          
+          &:last-child:after {
+            display: none;
+          }
+        }
+        
+        &-label {
+          color: #888;
+          font-size: 14px;
+          margin-bottom: 5px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    
+    &__field {
+      margin-bottom: 20px;
+      
+      &-label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+      
+      &-value {
+        position: relative;
+        
+        &:before {
+          content: '';
+          height: 1px;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+        
+        &:after {
+          content: '';
+          height: 1px;
+          left: 0;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+        
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+        
+        input {
+          background-color: transparent;
+          border: none;
+          font-size: 18px;
+          font-weight: bold;
+          outline: none;
+          width: 100%;
+        }
+        
+        input:focus {
+          outline: none;
+        }
+        
+        select {
+          background-color: transparent;
+          border: none;
+          color: #888;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: bold;
+          outline: none;
+          padding: 5px 10px;
+          width: 100%;
+        }
+      }
+    }
+    
+    &__save-button {
+      background-color: #0077c2;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      padding: 10px 20px;
+      transition: background-color 0.2s ease-in-out;
+      
+      &:hover {
+        background-color: #005ea1;
+      }
+    }
+  }
+  

@@ -1,0 +1,31 @@
+.calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.fc-daygrid-day-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fc-day-today {
+  background-color: #f6f4f4;
+}
+
+.fc-day-other {
+  opacity: 0.3;
+}
+
+.fc-event {
+  cursor: pointer;
+}
+
+.fc-event-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fc-toolbar {
+  margin-bottom: 1rem;
+}

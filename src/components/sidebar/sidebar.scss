@@ -1,0 +1,97 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  min-height: 100vh;
+  background-color: rgb(106, 92, 164);
+  border-bottom: 0.5px solid rgb(174, 157, 245);
+
+
+  .top {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f0eff3;
+    }
+    p{font-size: 20px;
+      font-weight: bold;
+      color: rgb(249, 248, 254);
+      }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      .title {
+        font-size: 10px;
+        font-weight: bold;
+        color: rgb(251, 248, 248);
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: non;
+        }
+
+        .icon {
+          font-size: 18px;
+          color: #f8f7fa;
+        }
+
+        span{
+            font-size: 13px;
+            font-weight: 600;
+            color: #f9f9f9;
+            margin-left: 10px;
+        }
+      }
+    }
+  }
+  .champs{
+    border-radius: non;
+  }
+  .bottom{
+      display: flex;
+      align-items: center;
+      margin: 10px;
+
+      .colorOption{
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          border: 1px solid #f4f4f7;
+          cursor: pointer;
+          margin: 5px;
+
+          &:nth-child(1){
+              background-color: whitesmoke;
+          }
+          &:nth-child(2){
+              background-color: #000000;
+          }
+          
+      }
+  }
+}

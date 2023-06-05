@@ -1,0 +1,19 @@
+import "./Bon.scss"
+import Sidebar from "../../components/sidebar/Sidebar"
+import Navbar from "../../components/navbar/Navbar"
+import Datatable4 from "../../components/datatable4/datatable4";
+function BonCommande  () {
+    return (
+      
+      <div className="list">
+        <Sidebar/>
+        <div className="listContainer">
+          <Navbar/>
+          <Datatable4/>
+        </div>
+      </div>
+      
+    );
+  };
+  
+  export default BonCommande;
